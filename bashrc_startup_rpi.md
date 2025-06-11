@@ -1,3 +1,24 @@
+## Using `.bashrc` (Simpler but less reliable)
+
+The `.bashrc` file runs each time a terminal session starts for a user.
+
+### 📄 1. Edit `.bashrc`
+
+```bash
+nano /home/pi/.bashrc
+```
+
+Scroll to the **bottom**, and add:
+
+```bash
+# Run Python script at login
+python3 /home/pi/startup_test.py &
+```
+
+> The `&` runs it in the background so it doesn't block the terminal.
+
+---
+
 
 ### `.bashrc` Limitations:
 
